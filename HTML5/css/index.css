@@ -22,41 +22,49 @@ body{
 }
 .header{
     background: yellow;
-    height: 10vh;
-    padding:0 50px;
 }
 /* 비쥬얼 */
 .visual{
     background: pink;
-    height: 10vh;
 }
 /* 메인 */
 .main{
-    height: 40vh;
+    display: flow-root;
     background: blue;
-    padding: 30px 0;
-    display: flex;
-    flex-flow: row nowrap;
-    /* flex-direction과 flex-wrap를 합친것  */
-    justify-content: space-evenly;
+    padding: 30px 15px;
 }
+/* .main::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+/* 메인의 가상요소를 만들어주고 block요소로 만들어준다, 그다음 clear:both;를 사용한다 */
+
 /* 컨텐츠 */
 .group{
     background: skyblue;
+    float: left;
+    background: skyblue;
+    margin: 0 15px;
 }
 .group1{
     width: 250px;
+
 }
 .group2{
     width: 380px;
+
 }
 .group3{
     width: 190px;
+
 }
+/* .clearfix{
+    clear: both;
+} */
 /* 슬로건 */
 .slogan{
     background: orange;
-    height: 10vh;
 }
 /* 푸터 */
 .footer{
@@ -65,5 +73,4 @@ body{
 /*  */
 .footer-inner{
     background: coral;
-    height: 10vh;
 }
