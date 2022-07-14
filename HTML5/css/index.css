@@ -335,29 +335,28 @@ fieldset{
 }
 
 /* 유효성 검사 배너 */
-.validation{
-    margin-top: 20px;
+.validation-list{
+    margin-top: 25px;
 }
 
-.validation-list{
-    border-radius: 18px;
-    text-align: center;
+.validation-list li{
+    margin-top: 10px;
 }
 
 .validation-list a{
+    background: url("./css/images/validation_icon.png") no-repeat 20px 50%/ 16px 16px,
+    #aaa linear-gradient(to bottom, #ccc, #aaa);
     display: block;
-    padding: 10px 10px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    border: 2px solid #000;
-    border-radius: 20px;
-    background: #aaa;
+    padding: 10px;
+    border-radius: 50px;
+    padding-left: 45px;
 }
- .validation-list img{
-    padding-right: 7px;
-    vertical-align: top;
- }
+
+.validation-list a:hover, .validation-list a:focus{
+    color: #f00;
+    background-size: 10px 10px, 100%;
+    /* background-size: 글자색상, 백그라운드 색상 */
+}
 
 /* 슬로건 */
 .slogan{
