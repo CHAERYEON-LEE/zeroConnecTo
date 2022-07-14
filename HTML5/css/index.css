@@ -198,6 +198,7 @@ body{
     animation-duration: 2000ms;
     animation-iteration-count: infinite;/*몇번 실행할거냐*/
     animation-direction: alternate; /*애니메이션 실행 순서의 방향*/
+    /* animation: fadeEffect 2000ms 1000ms infinite alternate; 위쪽의 속성 한번에적기*/
 }
 
 .visual::before{ 

@@ -1,0 +1,15 @@
+.sr-only{
+    background: yellow;
+    position: absolute;
+    /* width: 1px;
+    height: 1px; */
+    /* 가상요소가 가리킬 수 있는 최소한의 크기 1px씩 준다! 0을 주게되면 아예 인식을 못하게 됨 */
+    /* margin: -1px; */
+    /* 왜 이렇게 하는지 찾아보기 */
+    /* overflow: hidden; */
+    clip: rect(0,0,0,0);
+    /* 옛날버전 */
+    clip-path: polygon(0 0,0 0,0 0);
+    /* 지금버전 */
+    /* 읽을 수 있지만 화면에 보이지 않게 해야 함, font-size 0이나 컬러를 없게 하면 못읽음 */
+}
