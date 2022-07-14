@@ -358,6 +358,27 @@ fieldset{
     /* background-size: 글자색상, 백그라운드 색상 */
 }
 
+/* 웹 관련 용어 */
+.web-term{
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #ccc, #aaa);
+    padding: 15px 30px;
+}
+.web-term-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.web-term dt, .web-term:last-child{
+    background-color: #d16527;
+    float: right;
+}
+.web-term:first-child{
+    float: left;
+}
+.web-term dd{
+    background-color: #ff0;
+}
+
 /* 슬로건 */
 .slogan{
     background: orange;
