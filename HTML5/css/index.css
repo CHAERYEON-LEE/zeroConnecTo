@@ -359,26 +359,43 @@ fieldset{
 }
 
 /* 웹 관련 용어 */
-.web-term{
+.term{
+    background: silver;
     margin-top: 20px;
-    background: linear-gradient(to bottom, #ccc, #aaa);
-    padding: 15px 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #000;
 }
-.web-term-title{
+.term-list{
+    text-align: left;
+}
+.term-title{
     font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.term-list-subject{
+    color: cadetblue;
+    font-size: 1.5rem;
     font-weight: 700;
-}
-.web-term dt, .web-term:last-child{
-    background-color: #d16527;
     float: right;
+    width: 155px;
+    padding-bottom: 5px;
 }
-.web-term:first-child{
+.term-list-thumnail{
     float: left;
+    width: 61px;
+    vertical-align: top;
 }
-.web-term dd{
-    background-color: #ff0;
+.term-list-brief{
+    font-size: 1.6rem;
+    float: right;
+    width: 155px;
 }
-
+.class{
+    display: flow-root;
+    width: 230px;
+}
 /* 슬로건 */
 .slogan{
     background: orange;
