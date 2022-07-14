@@ -334,6 +334,30 @@ fieldset{
     color: #e8852e;
 }
 
+/* 유효성 검사 배너 */
+.validation{
+    margin-top: 20px;
+}
+
+.validation-list{
+    border-radius: 18px;
+    text-align: center;
+}
+
+.validation-list a{
+    display: block;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background: #aaa;
+}
+ .validation-list img{
+    padding-right: 7px;
+    vertical-align: top;
+ }
 
 /* 슬로건 */
 .slogan{
