@@ -358,41 +358,66 @@ body{
     /* background-size: 글자색상, 백그라운드 색상 */
 }
 
-/* 웹 관련 용어 */
+/* 웹 관련 용어 */ 
 .term{
     margin-top: 20px;
-    background: linear-gradient(to bottom, #666, #999);
-    border: 1px solid #000;
+    background: linear-gradient(to bottom, #ccc, #eee);
+    border: 1px solid #aaa;
     border-radius: 5px;
     padding: 15px;
-}
-.term-title{
-    font-size: 1.5rem;
+  }
+  
+  .term-title{
     font-weight: 700;
-}
-.term-list{
+    font-size: 1.5rem;
+  }
+  
+  .term-list{
     margin-top: 15px;
-}
-.term-list-subject{
-    float: right;
+  }
+  
+  .term-list div{
+    display: flow-root;
+    margin-top: 10px;
+  }
+  
+  .term-list-subject{
     width: 145px;
-    color: #296798;
-}
-.term-list-thumnail{
-    float: left;
-}
-.term-list-thumnail img{
+    color: #296897;
+  }
+  
+  .term-list-thumbnail{
+    position: relative;
+    top: 2px;
+  }
+  
+  .term-list-thumbnail img{
     vertical-align: top;
-}
-.term-list-brief{
-    float: right;
+  }
+  
+  .term-list-brief{
     width: 145px;
     margin-top: 5px;
     line-height: 1.5;
-}
-.term-list div{
-    display: flow-root;
-}
+  }
+  
+  .odd .term-list-subject, 
+  .odd .term-list-brief{
+    float: right;
+  }
+  
+  .odd .term-list-thumbnail{
+    float: left;
+  }
+  .even .term-list-subject, 
+  .even .term-list-brief{
+    float: left;
+  }
+  
+  .even .term-list-thumbnail{
+    float: right;
+  }
+  
 
 /* 검색 폼 */
 .search-form{
@@ -420,6 +445,9 @@ body{
     width: 100%;
     /* 백분율을 선택했을때는 부모컨테이너의 
     크기를 늘렸다 줄였을 때 유연하게 커지고 작아지게 되서 백분율로 설정한다 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 .search-button{
     background: #000;
