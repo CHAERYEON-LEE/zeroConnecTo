@@ -460,7 +460,7 @@ body{
 }
 
 /* 공지사항 및 자료실 */
-.board{
+/* .board{
     margin-top: 20px;
     position: relative;
     padding-top: 45px;
@@ -531,7 +531,7 @@ body{
   
   .board-section.is-select .board-more{
     display: block;
-  }
+  } */
 
 
 
