@@ -147,7 +147,7 @@
         <section class="login">
           <h2 class="login-title">로그인</h2>
           <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="login-form">
-            <fieldset>
+            <fieldset class="login-fieldset">
               <legend>회원 로그인 폼</legend>
               <div class="user-email">
                 <label for="userEmail">아이디</label>
@@ -182,18 +182,38 @@
           <h2 class="term-title">웹 관련 용어</h2>
           <dl class="term-list">
             <div class="class">
-              <dt class="term-list-subject">웹 표준이란?</dt>
-              <dd class="term-list-thumnail">
+              <dt class="term-list-subject odd">웹 표준이란?</dt>
+              <dd class="term-list-thumnail odd">
                 <img src="./assets/web_standards.gif" alt="W3C 로고" />
               </dd>
-              <dd class="term-list-brief"
-              >W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+              <dd class="term-list-brief odd">
+              W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+            </dd>
+            </div>
+          </dl>
+          <dl class="term-list">
+            <div class="class">
+              <dt class="term-list-subject even">웹 표준이란?</dt>
+              <dd class="term-list-thumnail even">
+                <img src="./assets/web_standards.gif" alt="W3C 로고" />
+              </dd>
+              <dd class="term-list-brief even">
+                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
             </dd>
             </div>
           </dl>
         </section>
       </div>
-      <div class="group group2">그룹2</div>
+      <div class="group group2">
+        <h2 class="sr-only">검색</h2>
+        <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
+          <fieldset class="search-form-fieldset">
+            <label for="search" class="search-title">자료검색</label>
+            <input type="search" placeholder="검색어를 입력하세요."/>
+            <button class="search-button">검색</button>
+          </fieldset>
+        </form>
+      </div>
       <div class="group group3">그룹3</div>
       <div class="clearfix"></div>
     </main>

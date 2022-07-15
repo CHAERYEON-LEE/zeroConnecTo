@@ -260,7 +260,7 @@ body{
     padding: 10px;
     box-shadow: 5px 5px 0 0 #aaa;
 }
-fieldset{
+.login-fieldset{
     position: relative;
     border-bottom: 1px solid #aaa;
     padding-bottom: 10px;
@@ -360,42 +360,70 @@ fieldset{
 
 /* 웹 관련 용어 */
 .term{
-    background: silver;
     margin-top: 20px;
+    background: linear-gradient(to bottom, #666, #999);
+    border: 1px solid #000;
+    border-radius: 5px;
     padding: 15px;
-    border-radius: 10px;
-    border: 2px solid #000;
-}
-.term-list{
-    text-align: left;
 }
 .term-title{
-    font-size: 1.6rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-.term-list-subject{
-    color: cadetblue;
     font-size: 1.5rem;
     font-weight: 700;
+}
+.term-list{
+    margin-top: 15px;
+}
+.term-list-subject{
     float: right;
-    width: 155px;
-    padding-bottom: 5px;
+    width: 145px;
+    color: #296798;
 }
 .term-list-thumnail{
     float: left;
-    width: 61px;
+}
+.term-list-thumnail img{
     vertical-align: top;
 }
 .term-list-brief{
-    font-size: 1.6rem;
     float: right;
-    width: 155px;
+    width: 145px;
+    margin-top: 5px;
+    line-height: 1.5;
 }
-.class{
+.term-list div{
     display: flow-root;
-    width: 230px;
 }
+
+/* 검색 폼 */
+.search-form{
+    background-color: #e8852e;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #000;
+    border-bottom: none;
+    background: linear-gradient(to bottom, #666, #999);
+}
+
+.search-title::before{
+    content: "\e802";
+    font-family: 'fontello';
+    margin-right: 5px;
+}
+
+.search-button{
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+
+
+
+
 /* 슬로건 */
 .slogan{
     background: orange;
