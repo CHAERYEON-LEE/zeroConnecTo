@@ -448,6 +448,7 @@ body{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    background-color: #fff;
 }
 .search-button{
     background: #000;
