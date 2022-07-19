@@ -686,8 +686,48 @@ body{
     box-shadow: 5px 5px 0 0 #bbb;
 }
 
+.related-title{
+    font-weight: 700;
+    font-weight: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.related-list{
+    height: 25px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background: #fff;
+    text-align: left;
+    padding-left: 40px;
+    line-height: 25px;
+    font-weight: 500;
+    overflow: hidden;
+}
 
+@keyframes slideMenuOpen{
+    0% {
+        height: 25px;
+    }
+    100%{
+        height: 127px;
+    }
+}
+@keyframes slideMenuClose{
+    0% {
+        height: 127px;
+    }
+    100%{
+        height: 25px;
+    }
+}
 
+.related-list:hover, .related-list:focus{
+    animation-name: slideMenuOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+ 
 /* 슬로건 */
 .slogan{
     background: orange;
