@@ -618,7 +618,7 @@ body{
     border-bottom: 1px solid #aaa;
 }
 
-.event-title, .related-title{
+.event-title, .related-title, .favorite-title{
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -714,6 +714,59 @@ body{
     padding: 10px 0;
 }
  
+/* 인기사이트 */
+.favorite{
+    position: relative;
+    margin-top: 20px;
+}
+.favorite-more{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 8px;
+}
+.favorite-list{
+    margin-top: 10px;
+    list-style-type: none;
+    /* overflow: hidden; */
+    /* 앞에 가상요소를 삽입해줄 것이기 때문에 overflow: hidden을 적용하면 두번 읽어주게됨 */
+}
+.favorite-list li{
+    margin-top: 8px;
+}
+
+.favorite-list a::before{
+    content: "1";
+    padding: 3px 7px;
+    margin-right: 5px;
+    background: #aaa;
+    border-radius: 5px;
+    color: #fff;
+}
+.favorite-list li:nth-child(2) a::before{
+    content: "2";
+}
+.favorite-list li:nth-child(3) a::before{
+    content: "3";
+}
+.favorite-list li:nth-child(4) a::before{
+    content: "4";
+}
+.favorite-list em{
+    display: block;
+    width: 10px;
+    height: 11px;
+    background-image: url(./images/rank.png);
+    float: right;
+    background-position: 0 0;
+}
+.favorite-list li:nth-child(2) em{
+    background-position: 0 11px;
+}
+.favorite-list li:nth-child(3) em{
+    background-position: 0 35px;
+}
+
 /* 슬로건 */
 .slogan{
     background: orange;
