@@ -43,6 +43,23 @@ body{
     font-size: 1.4rem;
 }
 
+/* 스킵 네비게이션 */
+/* .skip-nav{
+    
+} */
+.skip-nav a{
+    padding: 2px 0;
+    display: none;
+    flex-flow: row nowrap;
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    padding: 8px;
+}
+.skip-nav a::before{
+    display: flex;
+}
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
     width: 940px;
@@ -733,39 +750,47 @@ body{
 }
 .favorite-list li{
     margin-top: 8px;
+    counter-increment: number;
+    position: relative;
 }
 
-.favorite-list a::before{
-    content: "1";
-    padding: 3px 7px;
-    margin-right: 5px;
-    background: #aaa;
-    border-radius: 5px;
+.favorite-list li::before{
+    content: counter(number, decimal);
+    display: inline-flex;
+    justify-content: center;
+    padding: 2px 5px 1px;
+    font-size: 1.1rem;
     color: #fff;
+    background: #aaa;
+    border-radius: 4px;
+    min-width: 1.5em;
+    margin-right: 0.5em;
 }
-.favorite-list li:nth-child(2) a::before{
-    content: "2";
+
+.favorite-list a{
+    vertical-align: middle;
 }
-.favorite-list li:nth-child(3) a::before{
-    content: "3";
-}
-.favorite-list li:nth-child(4) a::before{
-    content: "4";
-}
+
 .favorite-list em{
-    display: block;
-    width: 10px;
+    /* display: block; */
+    width: 9px;
     height: 11px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    /* top에서 50%만큼 내려준다음 자신의 height 11px 의 절반만큼 마진으로 올려준다! */
     background-image: url(./images/rank.png);
-    float: right;
-    background-position: 0 0;
+    background-repeat: no-repeat;
 }
-.favorite-list li:nth-child(2) em{
-    background-position: 0 11px;
+
+.favorite-list .stop{
+    background-position: 0 50%;
 }
-.favorite-list li:nth-child(3) em{
-    background-position: 0 35px;
+.favorite-list .down{
+    background-position: 0 100%;
 }
+
 
 /* 슬로건 */
 .slogan{
