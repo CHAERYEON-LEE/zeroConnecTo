@@ -10,7 +10,7 @@ body *::after{
 
 [class]{
   margin: 0;
-}
+}/* class가 있을 때만 없애겠다 */
 
 a{
   color:inherit;
