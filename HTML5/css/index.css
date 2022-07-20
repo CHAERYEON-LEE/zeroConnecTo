@@ -899,6 +899,7 @@ body{
     margin: 5px 20px;
     text-transform: uppercase;
     /* font-variant: small-caps; */
+    /* 소문자 크기를 유지하면서 대문자로 바꿔줌! */
 }
 .guide-list a{
     display: block;
