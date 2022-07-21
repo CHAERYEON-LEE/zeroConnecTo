@@ -61,6 +61,7 @@ input[type="search"]{
     border-radius: 0.2rem;
     padding: 0.125rem 0.75rem;
     white-space: nowrap;
+    font-size: var(--text-sm);
 }
 .button--none{
     border: 0;
@@ -104,10 +105,31 @@ input[type="search"]{
         position: absolute;
         top: 3.75rem; 
         right: var(--spacing-md);
+        width: 50px;
+        height: 50px;
     }
 
+    .button--burger span{
+        background: #fff;
+        width: 40px;
+        height: 10px;
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 5px;
+    }
 
+    .button--burger:hover .button--burgerBarTop{
+        display: none;
+    }
 
+    .button--burger:hover .button--burgerBarMiddle{
+        transform: translateX(25px);
+        transform: rotate(45deg);
+    }
+
+    .button--burger:hover .button--burgerBarBottom{
+        transform: rotate(-45deg);
+    }
 }
 
 /* 데스크탑 디바이스(desktop device) */
