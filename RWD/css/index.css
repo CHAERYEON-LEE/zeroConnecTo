@@ -127,7 +127,6 @@ input[type="search"]{
 .spriteTwitter{
     background-position: 0 -460px;
 }
-
 .accent__book{
     color: var(--accent-book);
 }
@@ -143,6 +142,28 @@ input[type="search"]{
 .accent__twitter{
     color: var(--accent-twitter);
 }
+
+/* 공통 추천서적 */
+.book{
+    font-weight: 600;
+}
+.book__cover{
+    text-align: center;
+}
+.book__info{
+    text-align: center;
+}
+.book__summary{
+    margin: var(--spacing-lg);
+    text-align: left;
+}
+.ratingStar{
+    font-size: var(--text-lg);
+}
+.book__cover{
+    margin-bottom: 10px;
+}
+
 
 /* 모바일 디바이스 (Mobile device) */
 @media (min-width: 320px) and (max-width: 767px){
