@@ -82,6 +82,8 @@ input[type="search"]{
 }
 
 
+
+
 /* 모바일 디바이스 (Mobile device) */
 @media (min-width: 320px) and (max-width: 767px){
     /* 모바일 헤더 */
@@ -107,7 +109,7 @@ input[type="search"]{
         position: absolute;
         top: 3.75rem; 
         right: var(--spacing-md);
-        transform: translate(0.25rem, -0.25rem;)
+        transform: translate(0.25rem, -0.25rem);
     }
 
     .button--burger{
@@ -159,6 +161,28 @@ input[type="search"]{
         top: 50%;
         transform:translateY(-50%) rotate(-45deg);
     }
+
+    .appNavigation{
+        background: var(--green);
+        opacity: 0.9;
+        width: 350px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 400ms;
+    }
+    .menu__list{
+        font-size: var(--text-md);
+        font-weight: 700;
+        padding: 60px 0 0 30px;
+    }
+    .menu__item{
+        margin-bottom: 20px;
+    }
+    .appNavigation.is--active{
+        transform: translateX(-350px);
+    }
 }
 
 /* 데스크탑 디바이스(desktop device) */
@@ -188,6 +212,26 @@ input[type="search"]{
     /* 데스크탑 메인메뉴 제어버튼 */
     .button--burger{
         display: none;
+    }
+    .menu__list{
+        background: var(--secondary-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        padding: 0 var(--spacing-xl);
+        color: #fff;
+        font-weight: var(--text-md);
+    }
+    
+    .menu__item{
+        text-shadow: 1px 1px #000, 1px 1px #000, -1px -1px #000;
+    }
+    .menu__item a{
+        display: block;
+        width: inherit;
+        height: inherit;
     }
 }
 
