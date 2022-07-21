@@ -81,6 +81,13 @@ input[type="search"]{
     border: 1px solid currentColor;
 }
 
+/* 공통 메인메뉴 */
+.menu__link{
+    display: block;
+    padding: var(--spacing-xs);
+    font-size: var(--text-md);
+    font-weight: 700;
+}
 
 
 
@@ -180,12 +187,6 @@ input[type="search"]{
         border-bottom: 1px solid var(--silver);
     }
 
-    .menu__link{
-        display: block;
-        font-size: var(--text-md);
-        padding: var(--spacing-xs);
-        font-weight: 700;
-    }
     .menu.is--active{
         transform: none;
     }
@@ -238,11 +239,7 @@ input[type="search"]{
 
     }
     .menu__link{
-        display: block;
-        padding: var(--spacing-xs);
         color: var(--white);
-        font-size: var(--text-md);
-        font-weight: 700;
         text-shadow: 1px 1px var(--black), -1px -1px var(--black);
     }
 
