@@ -233,35 +233,32 @@ input[type="search"]{
     margin-top: var(--spacing-sm);
 }
 /* 공통 트위터 */
-.twitter__container{
-    display: flow-root;
-    font-size: var(--text-sm);
-    font-weight: 500;
+.twitter__userInfo{
+    display: inline-flex;
+    gap: var(--spacing-xs);
 }
 .twitter__userProfile{
     float: right;
     width: 100px;
-    height: 100px; 
-    border-radius: 70%;
+    height: 100px;
+    border-radius: 50%;
     overflow: hidden;
-    transform: translateY(var(--spacing-sm));
+    border: 1px solid var(--primary-color);
+    margin-left: var(--spacing-xs);
 }
 .twitter__userProfileImage{
+    object-fit: cover;
+    object-position: 30% 40%;
+    /* 100%로 늘렸을 때 원본 크기를 맞춰주기 위해 사용한다! */
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* 부모사이즈에 맞춰서 100%로 맞춰주세욥! */
 }
 
-.twitter__userInfo{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: var(--spacing-xs);
+.twitter__date{
+    display: block;
+    margin-top: var(--spacing-xs);
 }
-.twitter__summary{
-    margin-bottom: var(--spacing-xs);
-}
-
-
 
 
 
@@ -431,11 +428,7 @@ input[type="search"]{
         margin-left: auto;
         margin-right: auto;
     }
-    /* 데스크탑 게시판 */
 
-    /* 데스크탑 인기사이트 */   
-
-}
 
 
 /* 고해상도 배경이미지 미디어쿼리 */
