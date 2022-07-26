@@ -1,0 +1,18 @@
+$color-primary: pink;
+$url-images: "/assets/images/";
+$w: 200px;
+
+.box {
+  width: $w;
+  margin-left: $w;
+  background: $color-primary url($url-images + "bg.jpg");
+}
+
+.box a {
+  font-size: 60px;
+  text-decoration: none;
+  color: teal;
+  display: block;
+  padding: 50px;
+  background: tomato;
+}
