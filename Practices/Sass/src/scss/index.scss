@@ -1,6 +1,4 @@
-$color-primary: pink;
-$url-images: "/assets/images/";
-$w: 200px;
+@use "./_index" as *;
 
 .box {
   width: $w;
