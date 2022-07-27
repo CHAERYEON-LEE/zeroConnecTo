@@ -492,7 +492,6 @@ legend {
     max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
-    background: yellow;
   }
 }
 @media (max-width: 767px) {
@@ -624,6 +623,68 @@ legend {
     color: #fff;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
   }
+}
+
+.home {
+  padding: 1rem 1.5rem;
+}
+.home [class*=__title] {
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    grid-template-areas: "news news news news news news news news news news news news" "book book book book twitter twitter twitter twitter twitter favorite favorite favorite" "book book book book . board board board board board board board";
+  }
+  .home .book {
+    grid-area: book;
+    /* 너 이름은 이제 book이야 */
+  }
+  .home .news {
+    grid-area: news;
+  }
+  .home .favorite {
+    grid-area: favorite;
+  }
+  .home .twitter {
+    grid-area: twitter;
+  }
+  .home .board {
+    grid-area: board;
+  }
+}
+
+[class*=__title] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+[class*=__summary] {
+  font-size: 0.875rem;
+  letter-spacing: -0.02em;
 }
 
 .box {
