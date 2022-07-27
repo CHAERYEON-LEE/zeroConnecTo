@@ -43,6 +43,106 @@
 
 }
 
+.book{
+    &__cover{
+        @include boxCenter(70%);
+        text-align: center;
+    }
+
+    &__coverCaption{
+        margin-top: rem(16px);
+    }
+
+    &__info{
+        @include marginY(16px);
+        dt:first-child{
+            margin-right: rem(8px);
+        }
+
+        @include flexbox($j: center, $w:wrap);
+    }
+
+    .ratingStar{
+        width: 100%;
+        text-align: center;
+        font-size: rem(32px);
+    }
+}
+
+.news{
+    &__date{
+        display: block;
+        text-align: right;
+        margin-top: $spacing-base;
+    }
+}
+
+
+.board{
+    position: relative;
+
+    &__more{
+        @include posRight(0,0);
+        @include paddingX($spacing-sm);
+        transform: translateX($spacing-sm);
+    }
+
+    &__item{
+        @include flexbox;
+        margin-top: $spacing-xs;
+    }
+
+    &__link{
+        @include textEllipis;
+    }
+
+    &__date{
+        flex-grow: 1;
+        text-align: right;  
+    }
+
+}
+
+.favorite{
+    &__link::after{
+        content: attr(data-tooltip);
+        color: $accent-favorite;
+        font-size: rem(12px);
+    }
+
+    &__item{
+        margin-top: $spacing-sm;
+    }
+}
+
+.twitter{
+    &__userInfo{
+        display: inline-flex;
+        gap: $spacing-xs;
+    }
+
+    &__userProfile {
+        shape-outside: circle(50%);
+        float: right;
+        width: 20%;
+        max-width: 110px;
+        height: 110px;
+      }
+    
+      &__userProfileImage {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 30% 40%;
+      }
+
+    &__date{
+        display: block;
+        margin-top: $spacing-xs;
+    }
+}
+
 [class *="__title"] {
     @include flexbox(column, center);
     @include textHeading(18px);
@@ -52,5 +152,7 @@
     @include textStyle(14px);
 }
 
-
+.iframeWrapper{
+    @include responsIframe;
+}
 
