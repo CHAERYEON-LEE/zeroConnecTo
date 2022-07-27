@@ -1,8 +1,11 @@
 @use "./../utils" as *;
+@use "./../components" as *;
 
 // 헤더
-
 .appHeader {
+  position: relative;
+  @include paddingX(24px);
+  @include paddingY(16px);
   @include flexbox(column);
 
   @include mobile {
@@ -10,10 +13,20 @@
   }
 
   @include desktop {
-    position: relative;
     background: $white;
     @include boxSizeMax;
     background: yellow;
+  }
+
+  .buttonWrapper {
+    @include mobile {
+      @include posRight(52px, 20px);
+      padding: rem(4px);
+    }
+
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -46,6 +59,8 @@
 
 // 검색 폼
 .searchForm {
+  margin-top: rem(16px);
+
   &__group {
     @include flexbox($j: flex-end);
   }
@@ -62,5 +77,9 @@
     &__input {
       width: 100%;
     }
+  }
+
+  .button--primary {
+    margin-left: rem(16px);
   }
 }
